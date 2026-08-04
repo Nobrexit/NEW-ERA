@@ -1,0 +1,13 @@
+[package]
+name = "neweraproxy"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-rustls = "0.26"
+rustls-pemfile = "2"
+rcgen = "0.13"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
